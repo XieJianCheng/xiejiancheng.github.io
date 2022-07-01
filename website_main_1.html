@@ -1,0 +1,83 @@
+﻿<html>
+<head>
+    <!--版本 3.0.0-->
+    <!--加了js，支持多搜索引擎-->
+    <meta charset="UTF-8">
+    <title>Harold's HomeTab</title>
+    <link rel="shortcut icon" href="image/icon/icon_1.ico" type="image/x-icon" />
+    <link href="css_1.css" type="text/css" rel="stylesheet" />
+    <script type="text/javascript" src="control.js"></script>
+</head>
+<body onload="change_radio_style();">
+    <div align="center">
+        <b><span id="title_1">HC Home Tab</span></b>
+        <br/>
+        <!--搜索框,<form></form>实现-->
+        <form>
+            <input type="text" id="input_q" name="question" size="100" class="input_text">
+            <input type="submit" value="搜索" onclick="search(tools.value, question.value)" class="input_text">
+            <br/><br/>
+            <label id="label_bing">
+                <input type="radio" name="tools" id="radio_bing" value="bing" onchange="change_radio_style()" checked>    
+            必应</label>
+            <label id="label_translate">
+                <input type="radio" name="tools" id="radio_translate" value="translate" onchange="change_radio_style()">
+                翻译</label>
+            <label id="label_bilibili">
+                <input type="radio" name="tools" id="radio_bilibili" value="bilibili" onchange="change_radio_style()">
+                破站</label>
+            <label id="label_google">
+                <input type="radio" name="tools" id="radio_google" value="google" onchange="change_radio_style()">
+            谷歌</label>
+            <br/><br/>
+        </form>
+        <table cellpadding="38%" id="form_1">
+            <!--主要网站-->
+            <tr>
+                <!--常用-->
+                <th><img src="image/title/title_1.png" width="30" height="30"><span>常用</span></th>
+                <td><a href="javascript:run_link('http://bilibili.com/')"><h2 class="play">小破站</h2></a></td>
+                <td><a href="javascript:run_link('http://cn.bing.com/')"><h2>必应搜索</h2></a></td>
+                <td><a href="javascript:run_link('http://i.qq.com/')"><h2 class="play">QQ空间</h2></a></td>
+                <td><a href="javascript:run_link('http://baike.baidu.com/')"><h2>百度百科</h2></a></td>
+            </tr>
+            <tr>
+                <!--工具-->
+                <th rowspan="2"><img src="image/title/title_2.png" width="30" height="30"><span>工具</span></th>
+                <td><a href="javascript:run_link('http://www.github.com/')"><h2 class="foreign">Github</h2></a></td>
+                <td><a href="javascript:run_link('https://www.bitbug.net/')"><h2>生成ico</h2></a></td>
+                <td><a href="javascript:run_link('https://airportal.cn/')"><h2>AirPortal</h2></a></td>
+                <td><a href="javascript:run_link('http://www.jetbrains.com/zh-cn/')"><h2 class="foreign">Jetbrains</h2></a></td>
+            </tr>
+            <tr>
+                <!--工具 换行-->
+                <td><a href="javascript:run_link('http://mip.chinaz.com/')"><h2>IP查询</h2></a></td>
+                <td><a href="javascript:run_link('https://tool.retiehe.com/textencoder/')"><h2>编码器</h2></a></td>
+                <td><a href="javascript:run_link('http://email.163.com/')"><h2>网易邮箱</h2></a></td>
+                <td><a href="javascript:run_link('http://aq.qq.com/')"><h2 class="play">QQ安全</h2></a></td>
+            </tr>
+            <tr>
+                <!--资源-->
+                <th><img src="image/title/title_4.png" width="30" height="30"><span>资源</span></th>
+                <td><a href="javascript:run_link('http://msdn.itellyou.cn/')"><h2>MSDN旧版</h2></a></td>
+                <td><a href="javascript:run_link('http://next.itellyou.cn/')"><h2>MSDN新版</h2></a></td>
+                <td><a href="javascript:run_link('http://blog.csdn.net/')"><h2>CSDN博客</h2></a></td>
+                <td><a href="javascript:run_link('http://www.iconfont.cn/')"><h2>iconfont图标</h2></a></td>
+            </tr>
+            <tr>
+                <!--企业-->
+                <th><img src="image/title/title_5.png" width="30" height="30"><span>企业</span></th>
+                <td><a href="javascript:run_link('http://www.apple.com.cn/')"><h2 class="foreign">Apple</h2></a></td>
+                <td><a href="javascript:run_link('http://www.microsoft.com/zh-cn/')"><h2 class="foreign">Microsoft</h2></a></td>
+                <td><a href="javascript:run_link('http://www.huawei.com/')"><h2>华为</h2></a></td>
+                <td><a href="javascript:run_link('http://www.oracle.com/cn/')"><h2 class="foreign">Oracle</h2></a></td>
+            </tr>
+        </table>
+    </div>
+    <h3 class="update">v3.1 2022-6-30</h3>
+    <div class="poweredBy">
+        <h3>Powered By Harold.</h3>
+    </div>
+    <a href="websites_main_2.html" target="_self"><h3 class="toggle">切换版本</h3></a>
+</body>
+</html>
