@@ -13,6 +13,7 @@
     <h1><div id="title"><b><span>HC Home Tab</span></b></div></h1>
     <hr/>
     <!--搜索框,<form></form>实现-->
+
     <form>
         <input type="text" id="input_q" name="question" size="100" class="input_text">
         <input type="submit" value="搜索" onclick="search(tools.value, question.value)" class="input_text">
@@ -30,17 +31,18 @@
             <input type="radio" name="tools" id="radio_google" value="google" onchange="change_radio_style()">
             谷歌</label>
     </form>
+
     <!--按类型分-->
     <div>
         <!--常用-->
         <ul>
             <img src="image/title/title_1.png" width="30" height="30"><span>常用</span>
-            <li><a href="http://www.bilibili.com/" target="_blank"><h2 class="play">小破站</h2></a></li>
-            <li><a href="https://www.google.com/" target="_blank"><h2 class="foreign">Google</h2></a></li>
-            <li><a href="https://www.youtube.com/" target="_blank"><h2 class="foreign">YouTube</h2></a></li>
+            <li><a href="https://t.bilibili.com/" target="_blank"><h2 class="play">动态</h2></a></li>
+            <li><a href="http://www.bilibili.com/" target="_blank"><h2>小破站</h2></a></li>
             <li><a href="http://cn.bing.com/" target="_blank"><h2 class="common">必应搜索</h2></a></li>
             <li><a href="http://i.qq.com/" target="_blank"><h2>QQ空间</h2></a></li>
-            <li><a href="https://www.yikm.net/" target="_blank"><h2>小霸王</h2></a></li>
+            <li><a href="http://xiejiancheng.github.io/" target="_blank"><h2 class="common">个人网站</h2></a></li>
+            <li><a href="https://github.com/freefq/free/" target="_blank"><h2 class="foreign">freefq</h2></a></li>
         </ul>
         <ul>
             <img src="image/title/title_2.png" width="33" height="33"><span>工具</span>
@@ -51,6 +53,7 @@
             <li><a href="https://airportal.cn/" target="_blank"><h2>AirPortal</h2></a></li>
             <li><a href="https://tool.retiehe.com/textencoder" target="_blank"><h2>编码器</h2></a></li>
             <li><a href="http://mip.chinaz.com/" target="_blank"><h2>IP查询</h2></a></li>
+            <li><a href="https://wiki.biligame.com/mc/Minecraft_Wiki" target="_blank"><h2>mc wiki</h2></a></li>
         </ul>
         <ul>
             <img src="image/title/title_3.png" width="33" height="31"><span>学习</span>
@@ -60,6 +63,8 @@
             <li><a href="http://blog.csdn.net/" target="_blank"><h2>CSDN博客</h2></a></li>
             <li><a href="https://www.r2coding.com/" target="_blank"><h2>RTC</h2></a></li>
             <li><a href="http://fanyi.baidu.com/" target="_blank"><h2>百度翻译</h2></a></li>
+            <li><a href="https://www.desmos.com/calculator?lang=zh-CN/" target="_blank"><h2>Desmos</h2></a></li>
+            <li><a href="https://w7tmkh41.yichafen.com/" target="_blank"><h2 class="common">查分</h2></a></li>
         </ul>
         <ul>
             <img src="image/title/title_4.png" width="38" height="30"><span>资源</span>
@@ -68,7 +73,9 @@
             <li><a href="http://www.iconfont.cn/" target="_blank"><h2>iconfont图标</h2></a></li>
             <li><a href="http://image.baidu.com" target="_blank"><h2>百度图片</h2></a></li>
             <li><a href="http://www.1010jiajiao.com/" target="_blank"><h2>青夏图片</h2></a></li>
-            <li><a href="https://wallhaven.cc/" target="_blank"><h2 class="foreign">wallhaven</h2></a></li>
+            <li><a href="https://share.shuoaini.xyz/" target="_blank"><h2>share</h2></a></li>
+            <li><a href="https://bz.zzzmh.cn/index/" target="_blank"><h2>backpage</h2></a></li>
+            <li><a href="https://open.spotify.com/?" target="_blank"><h2 class="walled">soptify</h2></a></li>
         </ul>
         <ul>
             <img src="image/title/title_5.png" width="35" height="40"><span>企业</span>
@@ -83,18 +90,51 @@
         <ul>
             <img src="image/title/title_6.png" width="30" height="30"><span>其他</span>
             <li><a href="https://zty.pe/" target="_blank"><h2>ZType</h2></a></li>
+            <li><a href="https://js13kgames.com/games/sum-13/index.html" target="_blank"><h2>sum13</h2></a></li>
+            <li><a href="http://www.2048.org/" target="_blank"><h2>2048</h2></a></li>
             <li><a href="http://email.qq.com/" target="_blank"><h2>QQ邮箱</h2></a></li>
             <li><a href="http://email.163.com/" target="_blank"><h2>网易邮箱</h2></a></li>
             <li><a href="http://aq.qq.com/" target="_blank"><h2 class="play">QQ安全</h2></a></li>
             <li><a href="http://wangpan.baidu.com/" target="_blank"><h2>百度网盘</h2></a></li>
             <li><a href="http://y.qq.com/" target="_blank"><h2>QQ音乐</h2></a></li>
-            <li><a href="https://815864.yichafen.com/" target="_blank"><h2>查分</h2></a></li>
         </ul>
     </div>
-    <h3 class="update">v3.1 2022-6-30</h3>
-    <div class="copyright">
-        <h3>Copyright © 2021-2022 Haorld.</h3>
+    <div>
+        <ul>
+            <span class="foreign">墙外</span>
+            <li><a href="https://www.google.com/" target="_blank"><h2 class="walled">Google</h2></a></li>
+            <li><a href="https://www.discord.com/app" target="_blank"><h2 class="walled">Discord</h2></a></li>
+            <li><a href="https://www.youtube.com/" target="_blank"><h2 class="walled">YouTube</h2></a></li>
+            <li><a href="https://www.twitch.com/" target="_blank"><h2 class="walled">Twitch</h2></a></li>
+            <li><a href="https://www.twitter.com/" target="_blank"><h2 class="walled">Twitter</h2></a></li>
+            <li><a href="https://www.reddit.com/" target="_blank"><h2 class="walled">reddit</h2></a></li>
+            <li><a href="https://translate.google.com/" target="_blank"><h2 class="walled">Translate</h2></a></li>
+            <li><a href="http://mail.google.com/" target="_blank"><h2 class="walled">gmail</h2></a></li>
+        </ul>
+        <ul>
+            <span>破站</span>
+            <li><a href="https://www.bilibili.com/" target="_blank"><h2>主站</h2></a></li>
+            <li><a href="https://t.bilibili.com/" target="_blank"><h2>动态</h2></a></li>
+            <li><a href="https://link.bilibili.com/p/center/index?spm_id_from=444.41.0.0#/my-room/start-live" target="_blank"><h2>开播</h2></a></li>
+            <li><a href="https://live.bilibili.com/25632425/" target="_blank"><h2 class="common">Klairegin</h2></a></li>
+            <li><a href="https://live.bilibili.com/12039250/" target="_blank"><h2>pluginL</h2></a></li>
+            <li><a href="https://live.bilibili.com/11634566/" target="_blank"><h2>瑕玟</h2></a></li>
+            <li><a href="https://live.bilibili.com/24544255/" target="_blank"><h2>yuanbao</h2></a></li>
+        </ul>
+        <ul>
+            <span>MC SR</span>
+            <li><a href="https://docs.qq.com/sheet/DZnVPZ0JhTGVWdFZi?tab=BB08J2&u=f8f1125f30af4aeea6162dd2f64d341e" target="_blank"><h2 class="play">国内排行榜</h2></a></li>
+            <li><a href="https://docs.qq.com/sheet/DQVRieXNlQXRoWExp?tab=g7xw8b&u=f8f1125f30af4aeea6162dd2f64d341e" target="_blank"><h2 class="common">SSG排行榜</h2></a></li>
+            <li><a href="https://docs.qq.com/sheet/DSXB6VWdib05FVmVk?tab=9jdzdb&u=f8f1125f30af4aeea6162dd2f64d341e" target="_blank"><h2>速通资源</h2></a></li>
+            <li><a href="https://docs.qq.com/sheet/DU05tbHd6bmJMS3Fx?tab=0o20fk&u=f8f1125f30af4aeea6162dd2f64d341e" target="_blank"><h2>MCCE</h2></a></li>
+            <li><a href="https://www.speedrun.com/mc" target="_blank"><h2>speedrun</h2></a></li>
+            <li><a href="https://panda4994.github.io/seedinfo/seedinfo.html" target="_blank"><h2>seed info</h2></a></li>
+        </ul>
     </div>
-    <a href="index.html" target="_self"><h3 class="toggle">切换版本</h3></a>
+    <h3 class="update">v3.2.3 2022-12-31</h3>
+    <div class="copyright">
+        <h3>Copyright © 2021-2023 HaorldHC</h3>
+    </div>
+    <a href="websites_main_1.html" target="_self"><h3 class="toggle">切换版本</h3></a>
 </body>
 </html> 

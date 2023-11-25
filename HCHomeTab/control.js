@@ -1,17 +1,10 @@
-function sleep(sleepTime) {
-	for(var start = new Date; new Date - start <= sleepTime;) {}
-}
-
-
 function run_link(url){
     window.open(url);
 }
 
-
-var labs = ["bing", "translate", "bilibili", "google"]
+var labs = ["bing", "translate", "bilibili", "google", "url"]
 
 function search(using_tool, content){
-
     if (content.slice(content.length-3, content.length-1)==' -'){
         var using_mode = content.charCodeAt(content.length-1);
         if (using_mode>48 && using_mode<=(48+labs.length)){
@@ -20,18 +13,22 @@ function search(using_tool, content){
             content = content.slice(0, content.length-3);
         }
     }
-    if (using_tool == labs[0]){
+
+    if (using_tool == labs[0]){     // 必应
         window.open("https://www.bing.com/search?q="+content);
-    }else if(using_tool == labs[1]){
+    }else if(using_tool == labs[1]){    // 翻译
         window.open("https://translate.google.cn/?sl=zh-CN&tl=en&op=translate&text="+content);
-    }else if(using_tool == labs[2]){
-        if (content.slice(0, 2)=='BV'){
+    }else if(using_tool == labs[2]){        // 破站
+        if (content.slice(0, 2)=='BV'){     // 如果是BV码直接跳转到视频页面
             window.open("https://www.bilibili.com/video/"+content);
         }else{
             window.open("https://search.bilibili.com/all?from_source=webtop_search&keyword="+content);
         }
-    }else if(using_tool == labs[3]){
+    }else if(using_tool == labs[3]){        // 谷歌搜索
         window.open("https://www.google.com/search?newwindow=1&q="+content);
+    }else if(using_tool == labs[4]){
+        var opening_url = "http://"+content;       // 用于数据处理
+        window.open(opening_url);
     }else{
         throw new Error('UnknownError in search happened.');
     }
@@ -62,3 +59,5 @@ function jump(JumpTo){
         window.location.replace(websites_main_2.html);
     }
 }
+// 2022-7-31
+// 为什么没有注释啊草
